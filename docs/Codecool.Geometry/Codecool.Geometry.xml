@@ -25,22 +25,6 @@
                 Circle implementation class
             </summary>
         </member>
-        <member name="P:Codecool.Geometry.Shapes.Circle.AreaFormula">
-            <summary>
-                Gets formula for the area of the circle as a string.
-            </summary>
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Circle.PerimeterFormula">
-            <summary>
-                Gets formula for the perimeter of the circle as a string.
-            </summary>
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Circle.Area">
-            <inheritdoc />
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Circle.Perimeter">
-            <inheritdoc />
-        </member>
         <member name="T:Codecool.Geometry.Shapes.EquilateralTriangle">
             <summary>
                 Equilateral Triangle implementation class
@@ -129,22 +113,6 @@
             <summary>
                 Triangle implementation class
             </summary>
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Triangle.AreaFormula">
-            <summary>
-                Gets formula for the area of the triangle as a string.
-            </summary>
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Triangle.PerimeterFormula">
-            <summary>
-                Gets formula for the perimeter of the triangle as a string.
-            </summary>
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Triangle.Perimeter">
-            <inheritdoc/>
-        </member>
-        <member name="P:Codecool.Geometry.Shapes.Triangle.Area">
-            <inheritdoc />
         </member>
     </members>
 </doc>

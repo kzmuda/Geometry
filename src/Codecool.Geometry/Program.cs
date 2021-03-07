@@ -17,6 +17,25 @@ namespace Codecool.Geometry
             bool isRunning = true;
             Square square = new Square(2);
             Console.WriteLine(square.GetArea());
+
+
+            Circle circle = new Circle(3.5);
+            Console.WriteLine(circle.GetArea());
+            Console.WriteLine(circle.GetAreaFormula());
+            Console.WriteLine(circle.GetPerimeter());
+            Console.WriteLine(circle.GetPerimeterForumla());
+
+
+
+            Triangle triangle = new Triangle(1, -2, 3, 2.5);
+            Console.WriteLine(triangle.GetArea());
+            Console.WriteLine(triangle.GetAreaFormula());
+            Console.WriteLine(triangle.GetPerimeter());
+            Console.WriteLine(triangle.GetPerimeterForumla());
+
+
+
+
             // while (isRunning)
             // {
             //     int option = 0;  // TODO read the keyboard here

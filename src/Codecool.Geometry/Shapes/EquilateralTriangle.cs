@@ -5,7 +5,7 @@ namespace Codecool.Geometry.Shapes
     /// <summary>
     ///     Equilateral Triangle implementation class
     /// </summary>
-    public class EquilateralTriangle : Triangle
+    public class EquilateralTriangle //: Triangle
     {
         /// <summary>
         ///     Gets formula for the area of the triangle as a string.

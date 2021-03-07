@@ -5,22 +5,39 @@ namespace Codecool.Geometry.Shapes
     /// <summary>
     ///     Triangle implementation class
     /// </summary>
-    public class Triangle : Shape
+    public class Triangle : IShape
     {
-        /// <summary>
-        ///     Gets formula for the area of the triangle as a string.
-        /// </summary>
-        public new static string AreaFormula => throw new NotImplementedException();
+        private double h;
+        private double a;
+        private double b;
+        private double c;
 
-        /// <summary>
-        ///     Gets formula for the perimeter of the triangle as a string.
-        /// </summary>
-        public new static string PerimeterFormula => throw new NotImplementedException();
+        public Triangle(double a, double b, double c, double h)
+        {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            this.h = h;
+        }
 
-        /// <inheritdoc/>
-        public override double Perimeter => throw new NotImplementedException();
+        public double GetArea()
+        {
+            return a * h * 0.5;
+        }
 
-        /// <inheritdoc />
-        public override double Area => throw new NotImplementedException();
+        public string GetAreaFormula()
+        {
+            return "a * h / 2";
+        }
+
+        public double GetPerimeter()
+        {
+            return a + b + c;
+        }
+
+        public string GetPerimeterForumla()
+        {
+            return "a + b + c";
+        }
     }
 }

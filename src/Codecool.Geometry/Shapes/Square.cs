@@ -16,7 +16,7 @@ namespace Codecool.Geometry.Shapes
         // ///     Gets formula for the perimeter of the rectangle as a string.
         // /// </summary>
         // public new static string PerimeterFormula => throw new NotImplementedException();
-        public Square(double A) : base (A, A)
+        public Square(double A) : base (A, A)// wywołaj koknstruktor klasy bazowej
         {
 
         }

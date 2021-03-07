@@ -5,22 +5,36 @@ namespace Codecool.Geometry.Shapes
     /// <summary>
     ///     Circle implementation class
     /// </summary>
-    public class Circle : Shape
+    public class Circle : IShape
     {
-        /// <summary>
-        ///     Gets formula for the area of the circle as a string.
-        /// </summary>
-        public new static string AreaFormula => throw new NotImplementedException();
 
-        /// <summary>
-        ///     Gets formula for the perimeter of the circle as a string.
-        /// </summary>
-        public new static string PerimeterFormula => throw new NotImplementedException();
+        double r;
 
-        /// <inheritdoc />
-        public override double Area => throw new NotImplementedException();
+        public Circle(double r)
+        {
+            this.r = r;
+        }
 
-        /// <inheritdoc />
-        public override double Perimeter => throw new NotImplementedException();
+
+
+        public double GetArea()
+        {
+            return Math.PI * Math.Pow(r,2);
+        }
+
+        public string GetAreaFormula()
+        {
+            return "Pi * r^2";
+        }
+
+        public double GetPerimeter()
+        {
+            return 2 * Math.PI * r;
+        }
+
+        public string GetPerimeterForumla()
+        {
+            return "2 Pi r";
+        }
     }
 }
