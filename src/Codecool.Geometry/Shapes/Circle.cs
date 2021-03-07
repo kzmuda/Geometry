@@ -5,17 +5,39 @@ namespace Codecool.Geometry.Shapes
     /// <summary>
     ///     Circle implementation class
     /// </summary>
-    public class Circle : IShape
+    public class Circle : IShape, IComparable<Circle>
     {
 
         double r;
 
         public Circle(double r)
         {
+            if (!Utils.CheckIfAllArePositive(r))
+            {
+                throw new ArgumentException("asdsad");
+            }
+
             this.r = r;
         }
 
+        public int CompareTo(Circle other)
+        {
+            // this, other
+            // 1 > 2 => 1
+            // 1 = 2 => 0
+            // 1 < 2 => -1
+            if (this.GetArea() > other.GetArea())
+            {
+                return 1;
+            }
 
+            if (this.GetArea() == other.GetArea())
+            {
+                return 0;
+            }
+
+
+        }
 
         public double GetArea()
         {

@@ -12,7 +12,12 @@ namespace Codecool.Geometry.Shapes
         
          public Rectangle(double A, double B)
          {
-             this.A = A;
+             if (!Utils.CheckIfAllArePositive(A,B))
+             {
+                 throw new ArgumentException("asdsad");
+             }
+
+            this.A = A;
              this.B = B;
          }
         // /// <summary>
