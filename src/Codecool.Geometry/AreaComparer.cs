@@ -14,9 +14,17 @@ namespace Codecool.Geometry
             // x = y => 0
             // x < y => -1
 
-            if (x.GetArea() > y.GetArea())
+            var areaX = x.GetArea();
+            var areaY = y.GetArea();
+
+            if (areaX > areaY)
             {
                 return 1;
+            }
+
+            if (areaX < areaY)
+            {
+                return -1;
             }
 
             return 0;

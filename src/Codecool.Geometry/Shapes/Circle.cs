@@ -23,20 +23,20 @@ namespace Codecool.Geometry.Shapes
         public int CompareTo(Circle other)
         {
             // this, other
-            // 1 > 2 => 1
-            // 1 = 2 => 0
-            // 1 < 2 => -1
+            // this > other => 1
+            // this = other => 0
+            // this < other => -1
             if (this.GetArea() > other.GetArea())
             {
                 return 1;
             }
 
-            if (this.GetArea() == other.GetArea())
+            if (this.GetArea() < other.GetArea())
             {
-                return 0;
+                return -1;
             }
 
-
+            return 0;
         }
 
         public double GetArea()

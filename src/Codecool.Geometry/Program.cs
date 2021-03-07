@@ -32,7 +32,8 @@ namespace Codecool.Geometry
 
             List<IShape> list = new List<IShape> { circle, triangle, square };
 
-            list.Sort();
+            // list.Sort(); - jeśli nie ma komparatora - Runtime Exception
+            list.Sort(new AreaComparer());
 
             // int[] ints = { 1,5,8};
             // Console.Out.WriteLine(Add(ints));
