@@ -5,22 +5,49 @@ namespace Codecool.Geometry.Shapes
     /// <summary>
     ///     Rectangle implementation class
     /// </summary>
-    public class Rectangle : Shape
+    public class Rectangle : IShape
     {
-        /// <summary>
-        ///     Gets formula for the area of the rectangle as a string.
-        /// </summary>
-        public new static string AreaFormula => throw new NotImplementedException();
+        protected double A;
+        protected double B;
+        
+         public Rectangle(double A, double B)
+         {
+             this.A = A;
+             this.B = B;
+         }
+        // /// <summary>
+        // ///     Gets formula for the area of the rectangle as a string.
+        // /// </summary>
+        // public new static string AreaFormula => throw new NotImplementedException();
+        //
+        // /// <summary>
+        // ///     Gets formula for the perimeter of the rectangle as a string.
+        // /// </summary>
+        // public new static string PerimeterFormula => throw new NotImplementedException();
+        //
+        // /// <inheritdoc />
+        // public override double Area => throw new NotImplementedException();
+        //
+        // /// <inheritdoc />
+        // public override double Perimeter => throw new NotImplementedException();
+        public double GetArea()
+        {
+            return this.A * this.B;
+        }
 
-        /// <summary>
-        ///     Gets formula for the perimeter of the rectangle as a string.
-        /// </summary>
-        public new static string PerimeterFormula => throw new NotImplementedException();
+        public double GetPerimeter()
+        {
+            return 2 * this.A + 2 * this.B;
+        }
 
-        /// <inheritdoc />
-        public override double Area => throw new NotImplementedException();
+        public string GetAreaFormula()
+        {
+            return "A * B";
+        }
 
-        /// <inheritdoc />
-        public override double Perimeter => throw new NotImplementedException();
+        public string GetPerimeterForumla()
+        {
+            return "2A + 2B";
+        }
     }
 }

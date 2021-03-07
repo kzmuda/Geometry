@@ -7,14 +7,19 @@ namespace Codecool.Geometry.Shapes
     /// </summary>
     public class Square : Rectangle
     {
-        /// <summary>
-        ///     Gets formula for the area of the rectangle as a string.
-        /// </summary>
-        public new static string AreaFormula => throw new NotImplementedException();
+        // /// <summary>
+        // ///     Gets formula for the area of the rectangle as a string.
+        // /// </summary>
+        // public new static string AreaFormula => throw new NotImplementedException();
+        //
+        // /// <summary>
+        // ///     Gets formula for the perimeter of the rectangle as a string.
+        // /// </summary>
+        // public new static string PerimeterFormula => throw new NotImplementedException();
+        public Square(double A) : base (A, A)
+        {
 
-        /// <summary>
-        ///     Gets formula for the perimeter of the rectangle as a string.
-        /// </summary>
-        public new static string PerimeterFormula => throw new NotImplementedException();
+        }
+    
     }
 }

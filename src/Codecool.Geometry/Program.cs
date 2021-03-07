@@ -1,4 +1,7 @@
-﻿namespace Codecool.Geometry
+﻿using System;
+using Codecool.Geometry.Shapes;
+
+namespace Codecool.Geometry
 {
     /// <summary>
     ///     This is the main class of your program which contains Main method
@@ -12,33 +15,34 @@
         public static void Main(string[] args)
         {
             bool isRunning = true;
-
-            while (isRunning)
-            {
-                int option = 0;  // TODO read the keyboard here
-
-                switch (option)
-                {
-                    case 1:
-                        // TODO Add new shape
-                        break;
-                    case 2:
-                        // TODO Show all shapes
-                        break;
-                    case 3:
-                        // TODO Show shape with the largest perimeter
-                        break;
-                    case 4:
-                        // TODO Show shape with the largest area
-                        break;
-                    case 5:
-                        // TODO Show formulas
-                        break;
-                    case 0:
-                        // TODO Exit
-                        break;
-                }
-            }
+            Square square = new Square(2);
+            Console.WriteLine(square.GetArea());
+            // while (isRunning)
+            // {
+            //     int option = 0;  // TODO read the keyboard here
+            //
+            //     switch (option)
+            //     {
+            //         case 1:
+            //             // TODO Add new shape
+            //             break;
+            //         case 2:
+            //             // TODO Show all shapes
+            //             break;
+            //         case 3:
+            //             // TODO Show shape with the largest perimeter
+            //             break;
+            //         case 4:
+            //             // TODO Show shape with the largest area
+            //             break;
+            //         case 5:
+            //             // TODO Show formulas
+            //             break;
+            //         case 0:
+            //             // TODO Exit
+            //             break;
+            //     }
+            // }
         }
     }
 }
